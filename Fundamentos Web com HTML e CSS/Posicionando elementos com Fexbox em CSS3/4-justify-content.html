@@ -36,7 +36,23 @@
         .space-arround{
             justify-content: space-around;
         }
-        
+
+        .colum{
+            flex-direction: column;
+        }
+        .colum-end{
+            flex-direction: column;
+            min-height: 200px;
+        }
+        .center{
+            flex-direction: column;
+            justify-content: center;
+            min-height: 200px;
+        }
+        .beteewen{
+            justify-content: space-between;
+            min-width: 300px;
+        }
 
 
     </style>
@@ -44,7 +60,7 @@
     <title>Justify content</title>
 </head>
 <body>
-
+    <h1 style="text-align: center;">ROW</h1>
     <h1>Flex start</h1>
     
     <section class="container flex-start">
@@ -90,6 +106,41 @@
         <div class="item"> 4</div>
         <div class="item">Item 5</div>
     </section>
+
+    <h1 style="text-align: center;">COLUM</h1>
+
+    <h1>Flex start colum</h1>
+    
+    <section class="container flex-start colum">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item"> OUtro Item 3</div>
+    </section>
+
+    <h1>Flex end</h1>
+    
+    <section class="container flex-end colum-end">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item"> OUtro Item 3</div>
+    </section>
+    
+    <h1>Flex center</h1>
+    
+    <section class="container center colum">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item"> OUtro Item 3</div>
+    </section>
+
+    <h1>Flex space between</h1>
+    
+    <section class="container between colum">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item"> OUtro Item 3</div>
+    </section>
+
 
 
 </body>
