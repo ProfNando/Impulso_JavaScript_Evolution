@@ -12,6 +12,7 @@
             padding: 0;
             display: flex;
             list-style: none;
+            
         }
 
         .flex-iten{
@@ -25,11 +26,67 @@
             margin: 5px;
         }
 
+        .row{
+            flex-direction: row;
+        }
+
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .row-reverse li{
+                background-color: red;
+        }
+
+        .colum{
+            float: left;
+            flex-direction: column;
+        }
+
+        .colum li{
+            background: orange;
+        }
+
+        .colum-reverse{
+            float: right;
+            flex-direction: column-reverse;
+        }
+        
+        .colum-reverse li{
+            background: purple;
+        }
+
     </style>
 
 </head>
 <body>
     <ul class="flex-container">
+        <li class="flex-iten">1</li>
+        <li class="flex-iten">2</li>
+        <li class="flex-iten">3</li>
+        <li class="flex-iten">4</li>
+        <li class="flex-iten">5</li>
+    
+    </ul>
+
+    <ul class="flex-container row-reverse">
+        <li class="flex-iten">1</li>
+        <li class="flex-iten">2</li>
+        <li class="flex-iten">3</li>
+        <li class="flex-iten">4</li>
+        <li class="flex-iten">5</li>
+    
+    </ul>
+
+    <ul class="flex-container colum">
+        <li class="flex-iten">1</li>
+        <li class="flex-iten">2</li>
+        <li class="flex-iten">3</li>
+        <li class="flex-iten">4</li>
+        <li class="flex-iten">5</li>
+    
+    </ul>
+
+    <ul class="flex-container colum-reverse">
         <li class="flex-iten">1</li>
         <li class="flex-iten">2</li>
         <li class="flex-iten">3</li>
